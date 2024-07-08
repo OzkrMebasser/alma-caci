@@ -1,10 +1,8 @@
 "use client";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-// icons
-// import { IoIosArrowDroprightCircle } from "react-icons/io";
 
-const AboutHomePage = () => {
+const AboutHome = () => {
   const router = useRouter();
 
   return (
@@ -50,4 +48,4 @@ const AboutHomePage = () => {
   );
 };
 
-export default AboutHomePage;
+export default AboutHome;
