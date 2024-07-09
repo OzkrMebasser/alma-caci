@@ -100,7 +100,7 @@ const Navbar = () => {
 
           
           </div>
-          <div className="bg-[#2727d9] lg:h-[155px] lg:top-[24rem] top-[8rem] absolute w-full">
+          <div className="bg-[#2727d9] lg:h-[155px] lg:top-[24rem] md:h-[120px] md:top-[18rem] top-[8rem] absolute w-full">
             <div className=" lg:text-center ">
               <h1 className=" text-white text-center lg:text-5xl font-bold text-xl  lg:py-[1.30rem] py-3">
                 Centro de Atención Familiar A.C.
@@ -115,7 +115,7 @@ const Navbar = () => {
                 {Links.map((link) => (
                   <li
                     key={link.name}
-                    className="lg:mx-auto md:ml-8 text-xl md:my-0 my-7 "
+                    className="lg:mx-auto md:mx-auto  text-xl md:my-0 my-7 "
                   >
                     <a
                       href={link.link}
