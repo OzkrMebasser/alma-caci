@@ -14,9 +14,9 @@ export const metadata = {
   y comunidades para promover y mejorar la salud mental, emocional, física y espiritual.
   Guiados por los valores de amor, respeto, empatía y tolerancia, trabajamos todos los días
   para mejorar la calidad de vida de aquellos a quienes servimos`,
-  // icons: {
-  //   icon: "../../public/favicon.png",
-  // },
+  icons: {
+    icon: "../../public/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
     
       <body suppressHydrationWarning={true} className={inter.className}>
          
-        <link rel="icon" href="../../public/favicon.ico" />
+        {/* <link rel="icon" href="../../public/favicon.ico" /> */}
 
         <Navbar />
         {children}
