@@ -15,7 +15,7 @@ export const metadata = {
   Guiados por los valores de amor, respeto, empatía y tolerancia, trabajamos todos los días
   para mejorar la calidad de vida de aquellos a quienes servimos`,
   icons: {
-    icon: "../../public/favicon.ico",
+    icon: "/favicon.ico",
   },
 };
 
