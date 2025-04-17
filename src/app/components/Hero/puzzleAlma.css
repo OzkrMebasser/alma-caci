@@ -1,0 +1,96 @@
+.animation-delay-0 {
+    animation-delay: 0s;
+  }
+  
+  .animation-delay-500 {
+    animation-delay: 0.5s;
+  }
+  
+  .animation-delay-1000 {
+    animation-delay: 1s;
+  }
+  
+  .animation-delay-1500 {
+    animation-delay: 1.5s;
+  }
+  
+  @keyframes move-left {
+    0% {
+      top: 0%;
+      transform: translateY(0%);
+    }
+    50% {
+      top: 37%;
+      left: 37%;
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      top: 0%;
+      transform: translateY(0%);
+    }
+  }
+  
+  @keyframes move-right {
+    0% {
+      top: 0%;
+      transform: translateY(0%);
+    }
+    50% {
+      top: 37%;
+      right: 37%;
+      transform: translate(50%, -50%);
+    }
+    100% {
+      top: 0%;
+      transform: translateY(0%);
+    }
+  }
+  
+  @keyframes move-left-up {
+    0% {
+      bottom: 0%;
+      transform: translateY(0%);
+    }
+    50% {
+      bottom: 37%;
+      left: 37%;
+      transform: translate(-50%, 50%);
+    }
+    100% {
+      bottom: 0%;
+      transform: translateY(0%);
+    }
+  }
+  
+  @keyframes move-right-up {
+    0% {
+      bottom: 0%;
+      transform: translateY(0%);
+    }
+    50% {
+      bottom: 37%;
+      right: 37%;
+      transform: translate(50%, 50%);
+    }
+    100% {
+      bottom: 0%;
+      transform: translateY(0%);
+    }
+  }
+  
+  .animate-move-left {
+    animation: move-left 5s infinite;
+  }
+  
+  .animate-move-right {
+    animation: move-right 5s infinite;
+  }
+  
+  .animate-move-left-up {
+    animation: move-left-up 5s infinite;
+  }
+  
+  .animate-move-right-up {
+    animation: move-right-up 5s infinite;
+  }
+  

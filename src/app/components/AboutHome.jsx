@@ -2,12 +2,14 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
+
 const AboutHome = () => {
   const router = useRouter();
 
   return (
     <>
       <section className="">
+        
         <div className="py-[40px] md:py-[80px] lg:pt-[80px] lg:pb-[100px] container mx-auto px-[20px] lg:px-6">
           <div
             className="section-title-group justify-start"
