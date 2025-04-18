@@ -25,9 +25,9 @@ const NavbarSub = () => {
   ];
 
   return (
-    <nav className="bg-[#2727d9] text-white py-4 px-2">
+    <nav className="bg-[#2727d9] text-white py-4 px-2 sticky top-0 z-40">
       <div className=" mx-auto  lg:px-4 flex justify-between items-center">
-        <div className="text-sm lg:text-xl font-bold text-white">
+        <div className="text-[1rem] lg:text-xl font-bold text-white">
           <img
             className="inline h-[45px] w-[45px] lg:h-[45px] lg:w-[45px] mr-[1px] rounded-full "
             src="https://firebasestorage.googleapis.com/v0/b/caci-alma.appspot.com/o/caci-alma-logoNOblue.png?alt=media&token=fb149cdc-c137-48ce-ab8e-cfee95ddbed7"

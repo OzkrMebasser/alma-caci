@@ -4,7 +4,7 @@ import "./puzzleAlma.css";
 
 const PuzzleAlma = () => {
   return (
-    <div className="relative w-[250px] h-[250px] lg:w-[420px] lg:h-[420px] mx-auto p-2 lg:p-4  top-10 lg:top-0 lg:scale-100">
+    <div className="relative bg-blue-300 w-[200px] h-[200px] lg:w-[450px] lg:h-[450px] mx-auto p-0 lg:p-4  top-10 lg:top-0 lg:scale-100">
       {/* puzzle-left */}
       <div className="absolute top-0 left-0 h-1/4 w-1/4 bg-orange-500 border-[3px] border-orange-500 rounded-[10%] animate-move-left animation-delay-0 z-[1] text-white flex items-center justify-center">
         <span className="text-white font-bold text-5xl">A</span>
@@ -38,7 +38,7 @@ const PuzzleAlma = () => {
         <div className="absolute left-1/2 -bottom-[8%] h-[30%] w-[30%] border-2 border-b-transparent bg-white rounded-full -translate-x-1/2"></div>
         <div className="absolute top-1/2 -left-[8%] h-[30%] w-[30%] border-2 border-l-transparent bg-white rounded-full -translate-y-1/2"></div>
       </div>
-    </div>
+    </div>   
   );
 };
 

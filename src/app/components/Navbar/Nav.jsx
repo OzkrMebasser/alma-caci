@@ -5,10 +5,26 @@ import NavbarSub from "./NavbarSub";
 
 const Nav = () => {
   const [showMainNav, setShowMainNav] = useState(true);
+  const [scrollThreshold, setScrollThreshold] = useState(300); // Umbral inicial para pantallas grandes
 
   useEffect(() => {
+    const handleResize = () => {
+      // Cambiar umbral según el tamaño de la pantalla
+      if (window.innerWidth < 1024) { // Para pantallas móviles (menos de 1024px)
+        setScrollThreshold(50);
+      } else { // Para pantallas grandes
+        setScrollThreshold(300);
+      }
+    };
+
+    // Inicializar el umbral al cargar
+    handleResize();
+
+    // Actualizar el umbral cuando cambia el tamaño de la ventana
+    window.addEventListener("resize", handleResize);
+
     const handleScroll = () => {
-      if (window.scrollY > 300) {
+      if (window.scrollY > scrollThreshold) {
         setShowMainNav(false);
       } else {
         setShowMainNav(true);
@@ -16,12 +32,31 @@ const Nav = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+
+    // Limpiar los eventos al desmontar el componente
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [scrollThreshold]); // Añadir scrollThreshold como dependencia
 
   return (
     <div className="fixed top-0 w-full z-50">
-      {showMainNav ? <Navbar /> : <NavbarSub />}
+      <div
+        className={`transition-all duration-100 ease-in-out ${
+          showMainNav ? "opacity-100 scale-100" : "opacity-0 scale-0 pointer-events-none absolute"
+        }`}
+      >
+        <Navbar />
+      </div>
+
+      <div
+        className={`transition-all duration-100 ease-in-out ${
+          showMainNav ? "opacity-0 scale-0 pointer-events-none absolute" : "opacity-100 scale-100"
+        }`}
+      >
+        <NavbarSub />
+      </div>
     </div>
   );
 };

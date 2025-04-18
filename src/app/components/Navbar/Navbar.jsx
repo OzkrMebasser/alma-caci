@@ -51,13 +51,13 @@ const Navbar = () => {
 
   return (
     <header
-      className="relative bg-cover h-36 lg:bg-no-repeat lg:h-screen "
+      className="relative bg-cover h-36 pt-8 lg:bg-no-repeat lg:h-screen "
       style={{
         backgroundImage:
           "url(https://firebasestorage.googleapis.com/v0/b/caci-alma.appspot.com/o/heroBGpuzzle.png?alt=media&token=ab8a0966-de86-4510-9ae7-c96b837c991b)",
       }}
     >
-      <div className="relative flex items-center justify-center mx-auto px-4 py-32 sm:px-6 lg:px-8 h-[65%]">
+      <div className="relative flex items-center justify-center mx-auto px-4 py-[150px] sm:px-6 lg:px-8 h-[75%] ">
         <div
           className={`absolute top-0 w-[8rem] h-[8rem] md:w-[17rem] md:h-[17rem] lg:w-[23rem] lg:h-[23rem]  justify-center`}
         >
@@ -91,7 +91,7 @@ const Navbar = () => {
           </span>
         </div>
 
-        <div className="bg-[#2727d9] lg:h-[155px] lg:top-[24rem] md:h-[120px] md:top-[18rem] top-[8rem] absolute w-full">
+        <div className="bg-[#2727d9] lg:h-[155px] lg:top-[27.5rem] md:h-[120px] md:top-[18rem] top-[12rem] absolute w-full">
           <div className="lg:text-center">
             <h1 className="text-white text-center lg:text-5xl font-bold text-xl lg:py-[1.30rem] py-3">
               Centro de Atención Familiar A.C.
