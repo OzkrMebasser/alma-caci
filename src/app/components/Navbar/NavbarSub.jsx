@@ -2,6 +2,10 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { HiMenu, HiX } from "react-icons/hi";
+import { HiPuzzlePiece } from "react-icons/hi2";
+import { IoGlobeSharp } from "react-icons/io5";
+import { TfiMenu } from "react-icons/tfi";
+import { AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
 import Image from "next/image";
 import Flag from "react-world-flags";
@@ -25,7 +29,7 @@ const NavbarSub = () => {
   ];
 
   return (
-    <nav className="bg-[#2727d9] text-white py-4 px-2 sticky top-0 z-40">
+    <nav className="bg-[#2727d9] text-white py-4 px-2 sticky top-0 z-50 ">
       <div className=" mx-auto  lg:px-4 flex justify-between items-center">
         <div className="text-[1rem] lg:text-xl font-bold text-white">
           <img
@@ -63,19 +67,33 @@ const NavbarSub = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden flex items-center">
+        {/* {/* <div className="md:hidden flex items-center">
           <button onClick={toggleMenu}>
             {isOpen ? <HiX size={24} /> : <HiMenu size={24} />}
           </button>
-        </div>
+        </div> */}
+      </div> 
+
+      <div
+       onClick={toggleMenu}
+        className="text-[3rem] absolute right-[3px] top-2 flex items-center cursor-pointer md:hidden menuPuzzle swing "
+      >
+        <HiPuzzlePiece className="text-[#ffffff]" />
+        <span className="text-[#2727d9] absolute text-[.8rem] ml-[1.2rem] mt-[.25rem]">
+          {!isOpen ? (
+            <TfiMenu />
+          ) : (
+            <AiOutlineClose className="mt-[.1rem] text-[1rem] -ml-[.1rem]" />
+          )}
+        </span>
       </div>
 
       {/* Mobile Navigation */}
-      <div className={`md:hidden ${isOpen ? "block" : "hidden"}`}>
-        <div className="space-y-4 p-4">
+      <div className={`md:hidden ${isOpen ? "block h-[100vh]" : "hidden"}`}>
+        <div className="space-y-4 p-4 py">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href}>
-              <div onClick={toggleMenu} className="hover:text-gray-300">
+              <div onClick={toggleMenu} className="hover:text-gray-300 py-8">
                 {link.label}
               </div>
             </Link>
@@ -90,10 +108,10 @@ const NavbarSub = () => {
             className="flex items-center gap-2 hover:text-gray-300"
           >
             <Flag
-              code={i18n.language === "es" ? "MX" : "US"}
+              code={i18n.language === "es" ? "US" : "MX"}
               style={{ width: "25px", height: "18px" }}
             />
-            {i18n.language === "es" ? "Español" : "English"}
+            {i18n.language === "es" ? "English" : "Español"}
           </button>
         </div>
       </div>

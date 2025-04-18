@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <div className="">
         <Nav />
-        <div className="pt-[180px] lg:pt-[400px]">
+        <div className="pt-[210px] lg:pt-[400px] z-10">
           <HeroAlma />
         </div>
         <AboutHome />

@@ -51,7 +51,7 @@ const Navbar = () => {
 
   return (
     <header
-      className="relative bg-cover h-36 pt-8 lg:bg-no-repeat lg:h-screen "
+      className="relative bg-cover h-36 pt-8 lg:bg-no-repeat lg:h-screen z-50 "
       style={{
         backgroundImage:
           "url(https://firebasestorage.googleapis.com/v0/b/caci-alma.appspot.com/o/heroBGpuzzle.png?alt=media&token=ab8a0966-de86-4510-9ae7-c96b837c991b)",
