@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import "./PuzzleAlma.css";
+import "./puzzleAlma.css";
 
 const almaDefinitions = [
   {
