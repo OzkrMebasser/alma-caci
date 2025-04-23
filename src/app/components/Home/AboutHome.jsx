@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 const almaDefinitions = getAlmaDefinitions();
 
 const imgAosProps = {
-  "data-aos": window.innerWidth > 768 ? "fade-up" : "fade-left",
+  "data-aos": window.innerWidth > 768 ? "fade-up" : "flip-left",
   "data-aos-duration": window.innerWidth > 768 ? "3000" : "5000",
   "data-aos-offset": "300",
   "data-aos-easing": "ease-in-sine",
