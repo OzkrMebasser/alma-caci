@@ -51,15 +51,15 @@ const Navbar = () => {
 
   return (
     <header
-      className="relative bg-cover h-36 pt-8 lg:bg-no-repeat lg:h-screen z-50 "
+      className="relative bg-cover h-36 pt-8 md:bg-no-repeat md:h-[65vh] lg:bg-no-repeat lg:h-screen z-50 "
       style={{
         backgroundImage:
           "url(https://firebasestorage.googleapis.com/v0/b/caci-alma.appspot.com/o/heroBGpuzzle.png?alt=media&token=ab8a0966-de86-4510-9ae7-c96b837c991b)",
       }}
     >
-      <div className="relative flex items-center justify-center mx-auto px-4 py-[150px] sm:px-6 lg:px-8 h-[75%] ">
+      <div className="relative flex items-center justify-center mx-auto sm:px-6 px-4 lg:px-8 py-[150px]  h-[75%] ">
         <div
-          className={`absolute top-0 w-[8rem] h-[8rem] md:w-[17rem] md:h-[17rem] lg:w-[23rem] lg:h-[23rem]  justify-center`}
+          className={`absolute top-0 w-[8rem] h-[8rem] md:w-[20rem] md:h-[20rem] lg:w-[23rem] lg:h-[23rem]  justify-center`}
         >
           {pieces.map((_, index) => (
             <div
@@ -91,9 +91,9 @@ const Navbar = () => {
           </span>
         </div>
 
-        <div className="bg-[#2727d9] lg:h-[155px] lg:top-[27.5rem] md:h-[120px] md:top-[18rem] top-[12rem] absolute w-full">
+        <div className="bg-[#2727d9] lg:h-[155px] lg:top-[27.5rem] md:h-[120px] md:top-[24rem] top-[12rem] absolute w-full">
           <div className="lg:text-center">
-            <h1 className="text-white text-center lg:text-5xl font-bold text-xl lg:py-[1.30rem] py-3">
+            <h1 className="text-white text-center md:text-3xl lg:text-5xl font-bold text-xl lg:py-[1.30rem] py-3">
               Centro de Atención Familiar A.C.
             </h1>
             <ul
@@ -101,7 +101,7 @@ const Navbar = () => {
                 open ? "top-[3rem] z-50" : "left-[-490px]"
               }`}
             >
-              <div className="flex flex-col lg:flex-row lg:items-center lg:gap-8 w-full">
+              <div className="flex flex-col md:flex-row md:items-center md:gap-8 lg:flex-row lg:items-center lg:gap-8 w-full">
                 {navLinks.map((link) => (
                   <li
                     key={link.label}

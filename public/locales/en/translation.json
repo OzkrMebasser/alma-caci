@@ -1,10 +1,34 @@
 {
-    "nav": {
-      "home": "Home",
-      "about": "About",
-      "services": "Services",
-      "contact": "Contact",
-      "blog": "Blog"
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+
+  "home": {
+    "purpose": "with Purpose",
+    "speakingOf": "Speaking of",
+    "speakingOfALMA": "is about professionalism, commitment, love for others, and experiences that make a real difference. We aim to establish ourselves as an institution recognized for our values and our work in support of individuals and families. Our goal is to see happy families, and by doing so, to contribute to a healthy and joyful society. This is what motivates us, and we need all the helping hands we can get to make every person’s dream of a better life a reality.",
+    "learnMore": "Learn more..."
+  },
+  "almaDefinitions": {
+    "amor": {
+      "title": "(Amor) - Love",
+      "definition": "for yourself and for others."
+    },
+    "libertad": {
+      "title": "(Libertad) - Freedom",
+      "definition": "emotional, spiritual."
+    },
+    "misericordia": {
+      "title": "(Misericordia) - Mercy",
+      "definition": "for the people around you."
+    },
+    "alegria": {
+      "title": "(Alegría) - Joy",
+      "definition": "for overcoming your fears to succeed."
     }
   }
-  
+}

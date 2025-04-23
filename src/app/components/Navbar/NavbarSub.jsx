@@ -1,13 +1,13 @@
 "use client";
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { HiMenu, HiX } from "react-icons/hi";
+// import { HiMenu, HiX } from "react-icons/hi";
 import { HiPuzzlePiece } from "react-icons/hi2";
-import { IoGlobeSharp } from "react-icons/io5";
+// import { IoGlobeSharp } from "react-icons/io5";
 import { TfiMenu } from "react-icons/tfi";
 import { AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 import Flag from "react-world-flags";
 
 const NavbarSub = () => {
