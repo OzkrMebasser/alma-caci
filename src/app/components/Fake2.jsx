@@ -2,7 +2,7 @@ import React from 'react'
 
 const Fake2 = () => {
   return (
-    <span className='container bg-blue-600 mt-6'></span>
+    <div className=' bg-white mt-6 h-[600px]'></div>
   )
 }
 

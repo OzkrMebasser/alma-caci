@@ -3,7 +3,8 @@
 import AboutHome from "./components/Home/AboutHome";
 import HeroAlma from "./components/Hero/HeroAlma";
 import Nav from "./components/Navbar/Nav";
-import LearnMoreButton from "./components/UI/LearnMoreButton";
+
+import Fake2 from "./components/Fake2";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <section className="pt-[50px] z-10">
         <AboutHome />
         </section>
+        <Fake2/>
       
       </div>
     </>
