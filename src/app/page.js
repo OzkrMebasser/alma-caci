@@ -1,5 +1,3 @@
-"use client";
-
 import AboutHome from "./components/Home/AboutHome";
 import HeroAlma from "./components/Hero/HeroAlma";
 import Nav from "./components/Navbar/Nav";
@@ -15,10 +13,9 @@ export default function Home() {
           <HeroAlma />
         </section>
         <section className="pt-[50px] z-10">
-        <AboutHome />
+          <AboutHome />
         </section>
-        <Fake2/>
-      
+        <Fake2 />
       </div>
     </>
   );

@@ -10,7 +10,7 @@ const Nav = () => {
   useEffect(() => {
     const handleResize = () => {
       // Cambiar umbral según el tamaño de la pantalla
-      if (window.innerWidth < 1024) { // Para pantallas móviles (menos de 1024px)
+      if (window.innerWidth < 1024) { 
         setScrollThreshold(50);
       } else { // Para pantallas grandes
         setScrollThreshold(300);
