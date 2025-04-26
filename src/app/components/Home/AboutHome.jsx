@@ -6,12 +6,14 @@ import { useTranslation } from "react-i18next";
 
 const almaDefinitions = getAlmaDefinitions();
 
-const imgAosProps = {
-  "data-aos": window.innerWidth > 768 ? "fade-up" : "flip-left",
-  "data-aos-duration": window.innerWidth > 768 ? "3000" : "5000",
-  "data-aos-offset": "300",
-  "data-aos-easing": "ease-in-sine",
-};
+
+
+// const imgAosProps = {
+//   "data-aos": window.innerWidth > 768 ? "fade-up" : "fade-up",
+//   "data-aos-duration": window.innerWidth > 768 ? "2000" : "3000",
+//   "data-aos-offset": "300",
+//   "data-aos-easing": "ease-in-sine",
+// };
 
 const AboutHome = () => {
   const { t } = useTranslation();
@@ -20,10 +22,12 @@ const AboutHome = () => {
       style={{
         backgroundImage: `url('https://firebasestorage.googleapis.com/v0/b/caci-alma.appspot.com/o/CACI-ALMA-bg-half-small.png?alt=media&token=ef55265d-d87e-4356-975a-320e4e92578d')`,
       }}
-      className="bg-no-repeat bg-cover bg-center bg-transparent relative flex flex-col items-center mx-auto min-h-[400px] lg:min-h-[500px] lg:flex-row-reverse lg:w-full mt-12 lg:mb-0 mb-8 px-0 lg:px-12"
+      className="bg-no-repeat bg-cover bg-center bg-transparent relative flex flex-col items-center mx-auto min-h-[400px] lg:min-h-[500px] lg:flex-row-reverse lg:w-full mt-12 lg:mb-0 mb-0 px-0 lg:px-12"
     >
       {/* Image Column */}
-      <div className="w-full h-64 lg:w-1/2 lg:h-auto" {...imgAosProps}>
+      {/* <div className="w-full h-64 lg:w-1/2 lg:h-auto" {...imgAosProps}> */}
+      <div className="w-full h-64 lg:w-1/2 lg:h-auto" data-aos="fade-up" data-aos-duration="700" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        {/* Image Wrapper */}
         <img
           className="h-full w-full object-cover"
           src="https://firebasestorage.googleapis.com/v0/b/caci-alma.appspot.com/o/ALMA-home-section.jpeg?alt=media&token=178e9018-f861-44f5-ae16-8e7dbfce5ffa"

@@ -1,7 +1,7 @@
 const almaDefinitions = [
   {
     letter: "A",
-    key: "amor", // aquí usas la clave del objeto
+    key: "amor", 
     colorClass: "text-orange-500",
   },
   {
