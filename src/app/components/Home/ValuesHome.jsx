@@ -3,39 +3,42 @@ import { useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const ValuesHome = () => {
+  const colorClassMap = {
+    amor: "text-orange-500",
+    libertad: "text-red-600",
+    misericordia: "text-yellow-400",
+    alegria: "text-green-600",
+  };
+
   const valuesALMA = [
     {
       image:
         "https://firebasestorage.googleapis.com/v0/b/caci-alma.appspot.com/o/amor-al-projimo-1.webp?alt=media&token=2eb6a70d-f274-4f6a-a356-56221632d96d",
-        title: "Título de la sección",
-        description:
-        "Aquí va la descripción del contenido. Puedes escribir todo lo que necesites para explicar lo que representa la imagen, los beneficios, historia o lo que quieras compartir.",
-    
+      title: "Amor al Prójimo",
+      description:
+        "Impulsados por la empatía hacia los demás, abrazamos la compasión y ofrecemos apoyo incondicional a todos aquellos que buscan nuestra ayuda.",
     },
     {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/caci-alma.appspot.com/o/amor-al-projimo-1.webp?alt=media&token=2eb6a70d-f274-4f6a-a356-56221632d96d",
-          title: "Título de la sección",
-          description:
-          "Aquí va la descripción del contenido. Puedes escribir todo lo que necesites para explicar lo que representa la imagen, los beneficios, historia o lo que quieras compartir.",
-      
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/caci-alma.appspot.com/o/amor-al-projimo-1.webp?alt=media&token=2eb6a70d-f274-4f6a-a356-56221632d96d",
-          title: "Título de la sección",
-          description:
-          "Aquí va la descripción del contenido. Puedes escribir todo lo que necesites para explicar lo que representa la imagen, los beneficios, historia o lo que quieras compartir.",
-      
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/caci-alma.appspot.com/o/amor-al-projimo-1.webp?alt=media&token=2eb6a70d-f274-4f6a-a356-56221632d96d",
-          title: "Título de la sección",
-          description:
-          "Aquí va la descripción del contenido. Puedes escribir todo lo que necesites para explicar lo que representa la imagen, los beneficios, historia o lo que quieras compartir.",
-      
-      },
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/caci-alma.appspot.com/o/respeto-tolerancia.jpg?alt=media&token=1eed8d21-d274-4a48-a1b1-24621360137c",
+      title: "Respeto y Tolerancia",
+      description:
+        "Apreciamos y celebramos la diversidad de pensamientos, creencias y culturas. Respetamos a cada individuo como un ser único, sin importar su trasfondo.",
+    },
+    {
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/caci-alma.appspot.com/o/integridad.jpg?alt=media&token=91a8cfbd-9be8-4a22-aa05-e91a71782f21",
+      title: "Integridad",
+      description:
+        "Actuamos con honestidad y ética en todo lo que hacemos, manteniendo la confianza de aquellos a quienes servimos y de nuestra comunidad.",
+    },
+    {
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/caci-alma.appspot.com/o/empatia-3.jpg?alt=media&token=946ee286-f402-4042-a068-ea98d4a3b524",
+      title: "Empatía",
+      description:
+        "Nos esforzamos por comprender las necesidades y desafíos de quienes recurren a nosotros, siendo sensibles a sus experiencias.",
+    },
   ];
 
   const sliderRef = useRef(null);
@@ -72,7 +75,7 @@ const ValuesHome = () => {
 
   return (
     <div
-    data-aos="fade-right"
+      data-aos="fade-right"
       className="relative bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `url('https://firebasestorage.googleapis.com/v0/b/caci-alma.appspot.com/o/CACI-ALMA-bg-half-small.png?alt=media&token=ef55265d-d87e-4356-975a-320e4e92578d')`,
@@ -80,7 +83,7 @@ const ValuesHome = () => {
     >
       {/* Flecha izquierda */}
       <button
-        className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-md z-10"
+        className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-[#2727d9] p-2 rounded-full shadow-md z-10 text-white"
         onClick={() => scrollBySlide(-1)}
       >
         <FaChevronLeft size={20} />
@@ -88,7 +91,7 @@ const ValuesHome = () => {
 
       {/* Flecha derecha */}
       <button
-        className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-md z-10"
+        className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-[#2727d9] p-2 rounded-full shadow-md z-10 text-white"
         onClick={() => scrollBySlide(1)}
       >
         <FaChevronRight size={20} />
@@ -110,12 +113,17 @@ const ValuesHome = () => {
           >
             <img
               src={value.image}
-              alt="Descripción"
-              className="w-full md:w-1/2 shadow-md"
+              alt={value.title}
+              className="w-full md:w-1/2 h-64 md:h-96 object-cover shadow-md"
             />
+
             <div className="w-full md:w-1/2 text-center md:text-left flex flex-col justify-center h-full bg-[white] px-16 py-10">
-              <h2 className="text-2xl font-bold mb-4">{value.title}</h2>
-              <p className="text-gray-700">{value.description}</p>
+              <h2 className=" text-[#2727d9] text-2xl font-bold lg:text-4xl">
+                {value.title}
+              </h2>
+              <p className="mt-4 text-gray-800 text-base lg:text-lg text-justify">
+                {value.description}
+              </p>
             </div>
           </div>
         ))}
