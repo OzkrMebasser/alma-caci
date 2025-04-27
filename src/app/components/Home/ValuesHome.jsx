@@ -39,6 +39,20 @@ const ValuesHome = () => {
       description:
         "Nos esforzamos por comprender las necesidades y desafíos de quienes recurren a nosotros, siendo sensibles a sus experiencias.",
     },
+    {
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/caci-alma.appspot.com/o/excelencia-2.jpg?alt=media&token=071ad6fb-6e71-467a-906b-9c80385fda1e",
+      title: "Excelencia",
+      description:
+        "Buscamos la excelencia en la prestación de nuestros servicios, trabajando con pasión y compromiso para lograr un impacto positivo duradero en la sociedad.",
+    },
+    {
+        image: "https://firebasestorage.googleapis.com/v0/b/caci-alma.appspot.com/o/reconciliacion-2.png?alt=media&token=23e4c451-93b9-4fc5-9c58-db1c57d1b278",
+        title: "Reconciliación",
+        description:
+          "Impulsamos el restablecimiento de los vínculos tanto en la familias como con otros individuos, logrando una mejora en la salud mental.",
+      }
+      
   ];
 
   const sliderRef = useRef(null);
@@ -83,7 +97,7 @@ const ValuesHome = () => {
     >
       {/* Flecha izquierda */}
       <button
-        className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-[#2727d9] p-2 rounded-full shadow-md z-10 text-white"
+        className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-[#ffffff] p-2 rounded-full shadow-xl border-[.5px] border-[#2727d92f] z-10 text-[#2727d9]"
         onClick={() => scrollBySlide(-1)}
       >
         <FaChevronLeft size={20} />
@@ -91,7 +105,7 @@ const ValuesHome = () => {
 
       {/* Flecha derecha */}
       <button
-        className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-[#2727d9] p-2 rounded-full shadow-md z-10 text-white"
+        className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-[#ffffff] p-2 rounded-full shadow-xl border-[.5px] border-[#2727d92f] z-10 text-[#2727d9]"
         onClick={() => scrollBySlide(1)}
       >
         <FaChevronRight size={20} />
@@ -104,7 +118,7 @@ const ValuesHome = () => {
         onMouseLeave={handleMouseLeave}
         onMouseUp={handleMouseUp}
         onMouseMove={handleMouseMove}
-        className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth cursor-grab active:cursor-grabbing"
+        className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth cursor-grab active:cursor-grabbing py-8"
       >
         {valuesALMA.map((value, index) => (
           <div
@@ -114,10 +128,10 @@ const ValuesHome = () => {
             <img
               src={value.image}
               alt={value.title}
-              className="w-full md:w-1/2 h-64 md:h-96 object-cover shadow-md"
+              className="w-full md:w-1/2 h-[13rem] md:h-96 object-cover  shadow-[0px_4px_6px_0px_rgba(0,_0,_0,_0.1)]"
             />
 
-            <div className="w-full md:w-1/2 text-center md:text-left flex flex-col justify-center h-full bg-[white] px-16 py-10">
+            <div className="w-full md:w-1/2 text-center md:text-left flex flex-col justify-center h-full px-10 lg:px-16 py-12 lg:py-10 ">
               <h2 className=" text-[#2727d9] text-2xl font-bold lg:text-4xl">
                 {value.title}
               </h2>
