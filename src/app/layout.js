@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { I18nProvider } from "../utils/I18nProvider";
 import AOSInitializer from "../utils/AOSInitializer";
+import 'leaflet/dist/leaflet.css'
 
 const inter = Inter({ subsets: ["latin"] });
 {
