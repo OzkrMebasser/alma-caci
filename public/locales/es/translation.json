@@ -10,27 +10,26 @@
     "purpose": " con Propósito",
     "speakingOf": "Hablar de ",
     "speakingOfALMA": "es hablar de profesionalismo, de compromiso, de amor al prójimo, de experiencias que marcan la diferencia. Queremos consolidarnos como una institución que se destaca por nuestros valores y nuestro trabajo en pro de los individuos y las familias. Queremos ver familias felices, por lo tanto, ver una sociedad sana y alegre es parte de nuestra motivación y necesitamos de todas las manos posibles para hacer realidad los sueños de cada persona por una vida mejor.",
-    "learnMore": " Saber más ..."
+    "learnMore": " Saber más ...",
+    "servicesOn": "Damos servicios:"
   },
-  
-    "almaDefinitions": {
-      "amor": {
-        "title": "Amor",
-        "definition": "por ti mismo y por el prójimo."
-      },
-      "libertad": {
-        "title": "Libertad",
-        "definition": "emocional, espiritual."
-      },
-      "misericordia": {
-        "title": "Misericordia",
-        "definition": "por la gente que te rodea."
-      },
-      "alegria": {
-        "title": "Alegría",
-        "definition": "por conquistar tus miedos para tener éxito."
-      }
-    
+
+  "almaDefinitions": {
+    "amor": {
+      "title": "Amor",
+      "definition": "por ti mismo y por el prójimo."
+    },
+    "libertad": {
+      "title": "Libertad",
+      "definition": "emocional, espiritual."
+    },
+    "misericordia": {
+      "title": "Misericordia",
+      "definition": "por la gente que te rodea."
+    },
+    "alegria": {
+      "title": "Alegría",
+      "definition": "por conquistar tus miedos para tener éxito."
+    }
   }
-  
 }

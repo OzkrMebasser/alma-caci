@@ -5,6 +5,7 @@ import ImageWithDescription from "./components/Home/ValuesHome";
 
 import Fake2 from "./components/Fake2";
 import SimpleMap from "./components/SimpleMap";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -21,12 +22,12 @@ export default function Home() {
           <ImageWithDescription />
         </section>
         <section className="pt-[20px]">
-          <h3  className=" text-[#2727d9] text-2xl font-bold lg:text-4xl py-4 text-center">Damos sercicios en : </h3>
           <SimpleMap />
         </section>
 
-        <Fake2 />
+     
       </div>
+      <Footer/>
     </>
   );
 }
